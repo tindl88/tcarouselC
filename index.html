@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+	<link href="style.css" rel="stylesheet" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.easing.min.js"></script>
+	<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="jquery.tcarousel.js"></script>
+</head>
+<body>
+	<div id="menuCarousel" class="tCarousel">
+		<a class="tControl tCarouselPrev">Prev</a>
+		<a class="tControl tCarouselNext">Next</a>
+		<div class="tSlider">
+			<div class="item"><img src="menu-item1.png" alt="">
+				<h2>
+					<span>Tôm 1</span>
+					<span>(SHRIMP)</span>
+				</h2>
+			</div>
+			<div class="item"><img src="menu-item2.png" alt="">
+				<h2>
+					<span>Tôm 2</span>
+					<span>(SHRIMP)</span>
+				</h2>
+			</div>
+		</div>
+	</div>
+	<div id="galleryCarousel" class="tCarousel">
+		<a class="tControl tCarouselPrev">Prev</a>
+		<a class="tControl tCarouselNext">Next</a>
+		<div class="tSlider">
+			<div class="item"><img src="gallery-item1.jpg" alt="">
+				<h2>
+					<span>Món 1</span>
+					<span>Món 1</span>
+				</h2>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#menuCarousel .tSlider").tCarousel({
+				visibleItem: 3,
+				autoPlay:false,
+				itemWidth: 260,
+				itemHeight: 260,
+				itemMarginWidth: 0,
+				activeWidth: 362,
+				activeHeight: 363,
+				activeMarginWidth: 10,
+				nextSelector: ".tCarouselNext",
+				prevSelector: ".tCarouselPrev"
+			});
+			$("#galleryCarousel .tSlider").tCarousel({
+				visibleItem: 3,
+				autoPlay:false,
+				itemWidth: 90,
+				itemHeight: 60,
+				itemMarginWidth: 4,
+				activeWidth: 640,
+				activeHeight: 360,
+				activeMarginWidth: 20,
+				nextSelector: ".tCarouselNext",
+				prevSelector: ".tCarouselPrev"
+			});
+		});
+	</script>
+</body>
+</html>

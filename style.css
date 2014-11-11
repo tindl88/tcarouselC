@@ -1,0 +1,13 @@
+﻿.tCarousel{position:relative;margin:0 auto;background: #ccc;overflow: hidden;}
+.tCarousel .tSlider{position:relative;width:9999px}
+.tCarousel .tControl{cursor:pointer;top:50%;position:absolute;z-index: 1}
+.tCarousel .tCarouselPrev{left:0;margin-left:-20px;}
+.tCarousel .tCarouselNext{right:0;margin-right:-20px;}
+#menuCarousel{height:400px;}
+#menuCarousel .item{overflow:visible !important;position:relative;float:left;border-radius:50%;background: red}
+#menuCarousel .item img{max-width:100%;}
+#menuCarousel .item h2{position:absolute;bottom:-50px;width:100%;text-align: center}
+#galleryCarousel{height:400px;}
+#galleryCarousel .item{overflow:visible !important;position:relative;float:left;background: red}
+#galleryCarousel .item img{max-width:100%;}
+#galleryCarousel .item h2{display:none;position:absolute;bottom:-50px;width:100%;text-align: center}
